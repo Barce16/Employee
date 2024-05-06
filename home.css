@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins" , sans-serif;
+}
+.warning{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    min-height: 30vh;
+    background: url('./assets/img/park2.png') no-repeat;
+    background-size: 40%;
+    background-position: center;
+    background-color: grey;
+    border-radius: 10px ;
+    background-size: cover;
+    
+    }
+    .nav-item {
+        margin: 0;
+        min-width: 40vh;
+
+    }
+    .collapse {
+    
+    padding-left: 800px;
+    }
+    
