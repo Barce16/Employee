@@ -3,14 +3,15 @@
 
 
 $registration = array(
-    'ID' => "'" . $_POST['inp_ID'] . "'",
-    'FName' => "'" . $_POST['inp_FName'] . "'",
-    'LName' => "'" . $_POST['inp_LName'] . "'",
-    'MName' => "'" . $_POST['inp_MName'] . "'",
-    'Gmail' => "'" . $_POST['inp_Gmail'] . "'",
-    'Address' => "'" . $_POST['inp_Address'] . "'",
-    'Contact_Num' => "'" . $_POST['inp_Contact_Num'] . "'",
-    'Gender' => "'" . $_POST['inp_Gender'] . "'",
+    'Complete_Name' => "'" . $_POST['Complete_Name'] . "'",
+    'Age' => "'" . $_POST['Age'] . "'",
+    'Gender' => "'" . $_POST['Gender'] . "'",
+    'Contact' => "'" . $_POST['Contact'] . "'",
+    'Birth_date' => "'" . $_POST['Birth_date'] . "'",
+    'Birth_place' => "'" . $_POST['Birth_place'] . "'",
+    'Status' => "'" . $_POST['Status'] . "'",
+    'Gmail' => "'" . $_POST['Gmail'] . "'",
+    'Password' => "'" . $_POST['Password'] . "'",
 );
 save($registration);
 function save($data)
@@ -20,13 +21,13 @@ function save($data)
 
     $attributes = implode(", ", array_keys($data));
     $values = implode(", ", array_values($data));
-    $query = "INSERT INTO register ($attributes) VALUES ($values)";
+    $query = "INSERT INTO employee ($attributes) VALUES ($values)";
 
 
      if ($conn->query($query) === TRUE) {
-        header("location: /System/profile.php?success");
+        header("location: /Employee/profile.php?success");
     } else {
-        header("location: /System/registration.php?invalid");
+        header("location: /Employee/registration.php?invalid");
      }
 
     $conn->close(); 

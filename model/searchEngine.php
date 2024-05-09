@@ -1,24 +1,10 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = ""; 
-
-$database_name = "db_tes";
-
-
-$conn = new mysqli($servername, $username, $password, $database_name);
-
-
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
+include('./config/database.php');
 
 
 $value = $_POST['search'];// data that connect to function search.js
 
-$sql = "SELECT * FROM register";
+$sql = "SELECT * FROM employee WHERE Gmail like '%$value%'";
 $result = $conn->query($sql); //connected to search.js
 
 if ($result->num_rows > 0) {
@@ -28,10 +14,10 @@ if ($result->num_rows > 0) {
         <!-- database -->
         <tr>
             <td style="text-align : center;">
-                <?= $row['ID'] ?>
+                <?= $row['Complete_Name'] ?>
             </td>
             <td>
-                <?= $row['LName'] ?>
+                <?= $row['Gmail'] ?>
             </td>
         <!-- database -->
 

@@ -1,7 +1,7 @@
 function search(search_value){
     $.ajax({
         
-        url: '/System/model/admin.php', // link
+        url: '/Employee/model/admin.php', // link
         type: 'POST', //Search Engine
         data: { 'search' : search_value }, //connected to searchEngine by the components ofsearch HAHAHAHA
         success: function(response){

@@ -14,76 +14,49 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
            
+}.container {
+    margin-top: 50px;
+    
 }
 
-.navbar-brand h6 {
-    display: inline;
-    margin-left: 10px;
-    font-size: 24px;
+.card {
+    border: 1px solid #098b3f;
+    border-radius: 10px; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    
 }
 
 .card-header {
-    background-color: #343a40;
-    color: #110303;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.card-footer {
-    background-color: #343a40;
-    text-align: center;
+    background-color: #007bff; 
+    color: #010f04;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}.form-group {
+    margin-bottom: 20px;
 }
 
 .form-control {
-    margin-bottom: 15px;
-}
-.form {
-    margin-bottom: 20px;
+    border-radius: 5px; 
 }
 
-.form label {
-    display: block;
-    width: 100%;
-    margin-bottom: 5px;
-}
-
-.form input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-}
-
-.wrapper {
-    background-color: #fff;
+.card-body, .card-footer {
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 5px 30px 31px rgba(56, 98, 4, 0.67);
-    background: transparent;
-    max-width: 400px;
-    margin: 100px auto;
-
 }
 
-.btn-register {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: #0c57d8;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+.form-control {
+    border-radius: 5px; 
 }
 
-.btn-register:hover {
-    background-color: #218838;
-}
-.form-group {
-    margin-bottom: 20px;
+.btn-success {
+    background-color: #28a745; 
+    border-color: #28a745; 
 }
 
+.btn-success:hover {
+    background-color: #218838; 
+    border-color: #1e7e34;
+}
 
-
-
+.text-danger {
+    color: #dc3545; 
+}

@@ -31,7 +31,7 @@
         <div class="container-fluid">
             <!-- image -->
             <a class="navbar-brand" href="javascript:void(0)">
-                <img src="./assets/img/sport-car.png" height="50">
+                <img src="./assets/img/handshake.png" height="50">
             </a>
             <!-- image -->
 
@@ -45,7 +45,7 @@
             <div class="collapse navbar-collapse" id="mynavbar">
                 
                 <strong>
-                <span class="navbar-text col text-center">Welcome to Reservation Smart Parking System</span>
+                <span class="navbar-text col text-center">Welcome to Employee Application System</span>
                 <form class="d-flex">
                     <input onkeyup="search(this.value)" class="form-control me-2" type="text"
                         placeholder="Search for vacant parking area">
@@ -59,16 +59,16 @@
     </nav>
     <!-- For Text/Typography Front -->
     <div class="container-fluid mb-5">
-        <p class="h1 mt-2">Smart Parking System</p>
-        <p class="mt-2">You can Park your car for safety and avoid carjacking</p>
+        <p class="h1 mt-2">Employee Application System</p>
+        <p class="mt-2">You can view Employees information</p>
         <div class="card mt-2">
             <div class="card-header" style="text-align : center;">List of clients</div>
             <div class="card-body"> <strong> </strong>
                 <table class="table table-bordered table-hover" ;>
                     <thead>
                         <tr>
-                            <th width="100" style="text-align : center;">Client Id</th>
-                            <th style="text-align: left; padding-left: 10px">Name</th>
+                            <th width="100" style="text-align : center;">Employee Gmail</th>
+                            <th style="text-align: left; padding-left: 10px">Complete Name</th>
                             <th width="130">Details</th>
                         </tr>
                         <div class="modal" id="show-details">
@@ -81,7 +81,7 @@
 
                                     <!-- Modal Header -->
                                     <div class="modal-header">
-                                        <h4 class="modal-title">Client Details</h4>
+                                        <h4 class="modal-title">Employee Details</h4>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                     </div>
                                     <!-- Modal body -->
@@ -114,12 +114,12 @@
         </div>
         <div 
          class="navbar-brand" href="javascript:void(0)">
-                <img src="./assets/img/sport-car.png" height="50" 
+                <img src="./assets/img/handshake.png" height="50" 
                 
-                class="card-footer" >This are all the List of Clients </div>
+                class="card-footer" >This are all the List of Employee </div>
         
                 <?php
-        include("model/searchEngine.php");
+        include("./model/searchEngine.php");
         ?>
         <script>
             
